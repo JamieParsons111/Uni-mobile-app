@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Workup.Views.AlarmPage"
+             xmlns:viewmodel="clr-namespace:Workup.ViewModels"
+             Title="AlarmPage">
+    <VerticalStackLayout>
+        <Label FontSize="Title" Text ="Start a study session and do some great work. Good Luck! "/>
+
+     
+
+
+        <Label  x:Name= "TimeLabell" FontSize="Large" HorizontalTextAlignment="Center" Text="{Binding Lab}" />
+        <!--  this works -->
+
+
+        <ImageButton
+            Source="play_stop.svg"
+            x:Name="PlayStopButton"
+            HeightRequest="40"
+            Command="{Binding StartStopCommand}" />
+        <!-- always add "command" to the end -->
+
+    </VerticalStackLayout>
+
+</ContentPage>

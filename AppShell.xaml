@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+	x:Class="Workup.AppShell"
+	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:views="clr-namespace:Workup.Views"
+	xmlns:local="clr-namespace:Workup">
+    <ShellItem>
+        <ShellContent
+            Title="Workup"
+            Route="home"
+            ContentTemplate="{DataTemplate views:HomePage}">
+            <ShellContent.Icon>
+                <FontImageSource
+                FontFamily="FAS"
+                Glyph="">
+                </FontImageSource>
+            </ShellContent.Icon>
+        </ShellContent>
+
+        <ShellContent
+            Title="Journey"
+            Route="journey"
+            ContentTemplate="{DataTemplate views:JourneyPage}">
+            <ShellContent.Icon>
+                <FontImageSource
+                FontFamily="FAS"
+                Glyph=""> <!-- Man Walking-->
+                </FontImageSource>
+            </ShellContent.Icon>
+        </ShellContent>
+        
+
+        <ShellContent
+            Title="Alarm"
+            Route="alarm"
+            ContentTemplate="{DataTemplate views:AlarmPage}">
+            <ShellContent.Icon>
+                <FontImageSource
+                FontFamily="FAS"
+                Glyph=""> <!-- Alarm clock-->
+                </FontImageSource>
+            </ShellContent.Icon>
+        </ShellContent>
+
+        <ShellContent
+            Title="Settings"
+            Route="settings"
+            ContentTemplate="{DataTemplate views:SettingsPage}">
+            <ShellContent.Icon>
+                <FontImageSource
+                FontFamily="FAS"
+                Glyph=""> <!-- mag glass -->
+                </FontImageSource>
+            </ShellContent.Icon>
+        </ShellContent>
+
+		<ShellContent
+            Title="Calculator"
+            Route="calculator"
+            ContentTemplate="{DataTemplate views:CalculatorPage}">
+			<ShellContent.Icon>
+				<FontImageSource
+                FontFamily="FAS"
+                Glyph=""><!-- Calculator -->
+				</FontImageSource>
+			</ShellContent.Icon>
+		</ShellContent>
+
+    </ShellItem>
+
+</Shell>
